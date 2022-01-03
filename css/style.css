@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin:0 ;
+    box-sizing: border-box;
+}
+.body_x{
+    overflow-x: hidden;
+}
+
+/* -------------------------------- */
+/* --------------REUSABLE COMPONENT----------- */
+/* -------------------------------- */
+
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.body_01{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* color: #F9E6E6;  
+   color: #fab1a0;
+   color: #f4f4f4; */
+
+/* -------------------------------- */
+/* --------------HEADER----------- */
+/* -------------------------------- */
+
+.heading{
+    height: 130px;
+}
+.logo_header{ 
+    margin-left: 50px;
+} 
+.logo{  
+    float: left;
+    margin-top: 25px;
+    text-decoration: none;
+    color: orange;
+    font-weight: 500;
+    font-size: 50px;
+}
+.logo_header a:hover{
+    color: orange;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+.main-nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 130%;
+    font-weight: 700;
+    transition: 0,5s;
+}
+.main-nav li{
+    display: inline-block;
+    margin-right: 50px;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #fab1a0;
+}   
+
+/* -------------------------------- */
+/* --------------MAIN----------- */
+/* -------------------------------- */
+
+/* welcome */
+.main_1{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../image/background_img.jpg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_2{
+    text-align: center;
+    color: white;
+    padding-bottom: 170px;
+    font-size: 70px;
+    font-weight: 900;
+}
+.main_3{
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+/* show featured items */
+.topic{
+    margin-top: 30px;
+}
+.topic_item{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* show items box */
+.product-list{
+    margin-top: 30px;
+}
+
+/* for items */
+.product{
+    margin-top: 30px    ;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease-out;
+}
+.product:hover{
+    transform: translateY(-20px);
+    background-color: #F9E6E6;
+}
+.product-img img{
+    width: 90%;
+    text-align: center;
+    padding: 18px 10px 0 10px;
+}
+
+.product-name{
+    color: black;
+    margin: 10px 0 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.product-price{
+    color: black;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+.product_end{
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+.add_to_cart_button{
+    padding: 5px;
+    border-radius: 5px;
+}
+.add_to_cart_button:hover{
+    background-color: #fab1a0;
+}
+
+/* about section */
+.about_section{
+    margin-top: 100px;
+    background-color: #f4f4f4;
+    padding-bottom: 1px;
+}
+.topic_about_section{
+    padding-top: 50px;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.p_long{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    width: 70%;
+    margin-left: 15%;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+/* -------------------------------- */
+/* --------------CONTACT FORM----------- */
+/* -------------------------------- */
+
+.contract_section{
+    background-color: #F9E6E6;
+    height: 200px;
+}
+.information{
+    list-style: none;
+    padding-top: 40px;
+    line-height: 200%;
+    word-spacing: 1px;
+    font-size: 95%;
+}
+.small_icon{
+    font-size: 130%;
+    margin-right: 10px;
+}
+.information .small_icon:hover,
+.information .small_icon:active{
+    transform: scale(1.3);
+}
+.social_icons{
+    list-style: none;
+    margin-top: 20px;
+}
+.social_icons li{
+    display: inline-block;
+    font-size: 225%;
+    margin-left: 20px;
+}
+.social_icons li i{
+    transition: all 0.5s;
+}
+.social_icons li i:hover,
+.social_icons li i:active{
+    transform: scale(1.3);
+    color: orange;
+}
+
+
+/* -------------------------------- */
+/* --------------FOOTER----------- */
+/* -------------------------------- */
+.footer{
+    text-align: center;
+    background-color: #fab1a0;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}

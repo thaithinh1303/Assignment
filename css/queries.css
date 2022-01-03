@@ -1,0 +1,36 @@
+/* Big tablet to 1200px; */
+@media only screen and (max-width:1090px){ 
+    .html{
+        font-size: 16px;
+    }
+    .main-nav{
+        margin-right: 15px;
+    }
+    .main-nav li{
+        margin-right: 10px;
+    }
+} 
+
+/* Small tablet to big tablet from 768px to 1023px; */
+@media only screen and (max-width:1023px){
+    .main-nav{
+        margin-right: 15px;
+    }
+    .main-nav li{
+        margin-right: 10px;
+    }
+}
+
+/* small phones to small tablets; */
+@media only screen and (max-width:760px){
+    .logo_header{
+        margin-left: -2px;
+    }
+    .main-nav li{
+        display: block;
+    }
+    .main-nav{
+        margin-top: 15px;
+    }
+} 
+
